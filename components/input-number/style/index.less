@@ -3,6 +3,7 @@
 @import '../../input/style/mixin';
 
 @input-number-prefix-cls: ~'@{ant-prefix}-input-number';
+@form-item-prefix-cls: ~'@{ant-prefix}-form-item';
 
 .@{input-number-prefix-cls} {
   .reset-component;
@@ -50,7 +51,11 @@
   }
 
   &:hover {
-    .hover();
+    .hover(@input-number-hover-border-color);
+    & + .@{form-item-prefix-cls}-children-icon {
+      opacity: 0;
+      transition: opacity 0.24s linear 0.24s;
+    }
   }
 
   &-focused {
@@ -140,6 +145,7 @@
   }
 
   &-handler-up {
+    border-top-right-radius: @border-radius-base;
     cursor: pointer;
     &-inner {
       top: 50%;
@@ -154,6 +160,7 @@
   &-handler-down {
     top: 0;
     border-top: @border-width-base @border-style-base @border-color-base;
+    border-bottom-right-radius: @border-radius-base;
     cursor: pointer;
     &-inner {
       top: 50%;

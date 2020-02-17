@@ -1,6 +1,6 @@
 import React, { Children, cloneElement } from 'react';
 import { FormattedMessage, injectIntl } from 'react-intl';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { getChildren } from 'jsonml.js/lib/utils';
 import { Timeline, Alert, Affix } from 'antd';
 import EditButton from './EditButton';
@@ -81,7 +81,7 @@ class Article extends React.Component {
     return (
       /* eslint-disable-next-line */
       <article className="markdown" onClick={this.onResourceClick}>
-        <Helmet>
+        <Helmet encodeSpecialCharacters={false}>
           {helmetTitle && <title>{helmetTitle}</title>}
           {helmetTitle && <meta property="og:title" content={helmetTitle} />}
           {metaDesc && <meta name="description" content={metaDesc} />}

@@ -20,7 +20,6 @@
 
   &-dark &-inline&-sub {
     background: @menu-dark-submenu-bg;
-    box-shadow: 0 2px 8px fade(@black, 45%) inset;
   }
 
   &-dark&-horizontal {
@@ -108,7 +107,7 @@
     .@{iconfont-css-prefix} {
       color: @menu-dark-selected-item-icon-color;
     }
-    span {
+    .@{iconfont-css-prefix} + span {
       color: @menu-dark-selected-item-text-color;
     }
   }
