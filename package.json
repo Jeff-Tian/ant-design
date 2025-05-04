@@ -111,7 +111,7 @@
     "rc-dropdown": "~3.0.0-alpha.0",
     "rc-field-form": "^0.0.0-rc.5",
     "rc-input-number": "~4.5.4",
-    "rc-mentions": "~1.0.0-alpha.3",
+    "rc-mentions": "~1.13.1",
     "rc-menu": "~8.0.0-alpha.7",
     "rc-notification": "~4.0.0-rc.1",
     "rc-pagination": "~1.21.0",
