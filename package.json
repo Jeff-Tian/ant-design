@@ -112,7 +112,7 @@
     "rc-field-form": "^0.0.0-rc.5",
     "rc-input-number": "~4.5.4",
     "rc-mentions": "~1.0.0-alpha.3",
-    "rc-menu": "~8.0.0-alpha.7",
+    "rc-menu": "~8.10.8",
     "rc-notification": "~4.0.0-rc.1",
     "rc-pagination": "~1.21.0",
     "rc-picker": "^0.0.1-rc.6",
